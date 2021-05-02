@@ -6,6 +6,10 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+        <meta property="og:title" content="Great news only for you.!" />
+      </Head>
       <div className="page-container">
         <Toolbar />
         <div className={styles.main}>
@@ -15,4 +19,4 @@ export default function Home() {
       </div>
     </>
   );
-} 
+}

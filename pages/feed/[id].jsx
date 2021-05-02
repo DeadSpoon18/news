@@ -39,6 +39,7 @@ const Feed = ({ articles, pageNumber }) => {
   return (
     <>
       <Head>
+        <title>Feed</title>
         <meta property="og:image" content={articles[0]?.urlToImage} />
         <meta property="og:description" content={articles[0]?.description} />
         <meta property="og:title" content={articles[0]?.title + " and more!"} />
