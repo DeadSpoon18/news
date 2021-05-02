@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Home</title>
-        <meta property="og:title" content="Great news only for you.!" />
+        <meta name="keywords" content="Great news only for you!" />
       </Head>
       <div className="page-container">
         <Toolbar />
