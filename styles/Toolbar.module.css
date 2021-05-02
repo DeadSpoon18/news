@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 100%;
+}
+
+.main a {
+  margin: 25px;
+  cursor: pointer;
+}
+
+.main a:hover {
+  color: rgb(168, 168, 168);
+}
