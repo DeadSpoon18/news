@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/Feed.module.css";
-import Toolbar from "../../components/Toolbar"
+import Toolbar from "../../components/Toolbar";
+import Head from "next/head";
 
 export const getServerSideProps = async (pageContext) => {
   const pageNumber = pageContext.query.id;
@@ -37,6 +38,11 @@ const Feed = ({ articles, pageNumber }) => {
   const router = useRouter();
   return (
     <>
+      <Head>
+        <meta property="og:image" content={articles[0]?.urlToImage} />
+        <meta property="og:description" content={articles[0]?.description} />
+        <meta property="og:title" content={articles[0]?.title + " and more!"} />
+      </Head>
       <div className="page-container">
         <Toolbar />
         <div className={styles.main}>
